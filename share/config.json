@@ -64,7 +64,7 @@
     0
   ],
   "end_timesteps_of_each_deferrable_load": [
-    192
+    288
   ],
   "load_peak_hour_periods": {
     "period_hp_1": [
@@ -80,7 +80,7 @@
     true
   ],
   "set_deferrable_load_single_constant": [
-    true
+    false
   ],
   "set_deferrable_startup_penalty": [
     0

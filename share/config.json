@@ -61,7 +61,7 @@
   "delta_forecast_daily": 1,
   "load_cost_forecast_method": "csv",
   "start_timesteps_of_each_deferrable_load": [
-    0
+    1
   ],
   "end_timesteps_of_each_deferrable_load": [
     288

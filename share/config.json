@@ -1,0 +1,136 @@
+{
+  "logging_level": "INFO",
+  "costfun": "profit",
+  "optimization_time_step": 5,
+  "historic_days_to_retrieve": 2,
+  "method_ts_round": "nearest",
+  "continual_publish": false,
+  "data_path": "default",
+  "set_total_pv_sell": false,
+  "lp_solver_timeout": 45,
+  "num_threads": 0,
+  "ssl_no_verify": false,
+  "set_nocharge_from_grid": false,
+  "set_nodischarge_to_grid": false,
+  "set_battery_dynamic": true,
+  "battery_dynamic_max": 0.9,
+  "battery_dynamic_min": -0.9,
+  "weight_battery_discharge": 0,
+  "weight_battery_charge": 0.05,
+  "sensor_power_photovoltaics": "sensor.pv_power_w",
+  "sensor_power_photovoltaics_forecast": "sensor.p_pv_forecast",
+  "sensor_power_load_no_var_loads": "sensor.house_load_power_w",
+  "sensor_replace_zero": [
+    "sensor.pv_power_w",
+    "sensor.p_pv_forecast"
+  ],
+  "sensor_linear_interp": [
+    "sensor.pv_power_w",
+    "sensor.house_load_power_w"
+  ],
+  "use_websocket": true,
+  "use_influxdb": false,
+  "influxdb_host": "localhost",
+  "influxdb_port": 8086,
+  "influxdb_database": "homeassistant",
+  "influxdb_measurement": "W",
+  "influxdb_retention_policy": "autogen",
+  "influxdb_use_ssl": false,
+  "influxdb_verify_ssl": false,
+  "load_negative": false,
+  "set_zero_min": true,
+  "number_of_deferrable_loads": 1,
+  "nominal_power_of_deferrable_loads": [
+    1000
+  ],
+  "minimum_power_of_deferrable_loads": [
+    1000
+  ],
+  "operating_hours_of_each_deferrable_load": [
+    8
+  ],
+  "weather_forecast_method": "solcast",
+  "open_meteo_cache_max_age": 30,
+  "load_forecast_method": "naive",
+  "model_type": "load_forecast",
+  "var_model": "sensor.power_load_no_var_loads",
+  "sklearn_model": "KNeighborsRegressor",
+  "num_lags": 48,
+  "split_date_delta": "48h",
+  "perform_backtest": false,
+  "delta_forecast_daily": 1,
+  "load_cost_forecast_method": "csv",
+  "start_timesteps_of_each_deferrable_load": [
+    0
+  ],
+  "end_timesteps_of_each_deferrable_load": [
+    192
+  ],
+  "load_peak_hour_periods": {
+    "period_hp_1": [
+      {
+        "start": "02:54"
+      },
+      {
+        "end": "15:24"
+      }
+    ]
+  },
+  "treat_deferrable_load_as_semi_cont": [
+    true
+  ],
+  "set_deferrable_load_single_constant": [
+    true
+  ],
+  "set_deferrable_startup_penalty": [
+    0
+  ],
+  "load_peak_hours_cost": 0.1907,
+  "load_offpeak_hours_cost": 0.1419,
+  "production_price_forecast_method": "csv",
+  "photovoltaic_production_sell_price": 0.1419,
+  "maximum_power_from_grid": 13000,
+  "maximum_power_to_grid": 10000,
+  "set_use_pv": true,
+  "set_use_adjusted_pv": false,
+  "adjusted_pv_regression_model": "LassoRegression",
+  "adjusted_pv_solar_elevation_threshold": 10,
+  "adjusted_pv_model_max_age": 24,
+  "pv_module_model": [
+    "CSUN_Eurasia_Energy_Systems_Industry_and_Trade_CSUN295_60M"
+  ],
+  "pv_inverter_model": [
+    "Fronius_International_GmbH__Fronius_Primo_5_0_1_208_240__240V_"
+  ],
+  "surface_tilt": [
+    30
+  ],
+  "surface_azimuth": [
+    205
+  ],
+  "modules_per_string": [
+    16
+  ],
+  "strings_per_inverter": [
+    3
+  ],
+  "inverter_is_hybrid": true,
+  "inverter_ac_output_max": 10000,
+  "inverter_ac_input_max": 10000,
+  "inverter_efficiency_dc_ac": 0.97,
+  "inverter_efficiency_ac_dc": 0.985,
+  "inverter_stress_cost": 0,
+  "inverter_stress_segments": 10,
+  "compute_curtailment": true,
+  "set_use_battery": true,
+  "battery_discharge_power_max": 10000,
+  "battery_charge_power_max": 10000,
+  "battery_discharge_efficiency": 0.95,
+  "battery_charge_efficiency": 0.95,
+  "battery_nominal_energy_capacity": 41930,
+  "battery_minimum_state_of_charge": 0.1,
+  "battery_maximum_state_of_charge": 1,
+  "battery_target_state_of_charge": 0.6,
+  "battery_stress_cost": 0,
+  "battery_stress_segments": 10
+}

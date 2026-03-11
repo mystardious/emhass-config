@@ -1,0 +1,8 @@
+# Secrets (HA tokens, API keys)
+secrets_emhass.yaml
+
+# Runtime data (optimization results, pickles, logs)
+data/
+
+# Orphaned root config copy (actual config is in share/)
+/config.json
